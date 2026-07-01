@@ -21,7 +21,7 @@
     (arguments
       '(#:install-plan
         '(("atuin" "bin/atuin"))
-      #:strip-binaries? #f
+      ; #:strip-binaries? #f
       #:validate-runpath? #f
       #:phases (modify-phases %standard-phases
                 (delete 'patch-shebangs))))
