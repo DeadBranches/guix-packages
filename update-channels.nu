@@ -8,7 +8,7 @@ def main [] {
   let guix_user_repo = ($nu.home-dir | path join guix)
 
   print $"Updating guix user repo."
-  guix pull $"--channels=($guix_user_repo | path join my-channels.scm)"
+  guix pull $"--channels=($guix_user_repo | path join my-channels.conf)"
 
   print $"Updating guix repository and pinning"
   guix describe --format=channels 
