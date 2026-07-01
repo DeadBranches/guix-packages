@@ -27,7 +27,5 @@
                 (delete 'patch-shebangs))))
     (synopsis "Atuin")
     (description "Making your shell magical")
-    (home-page "https://www.nushell.sh")
+    (home-page "https://atuin.sh")
     (license license:expat)))
-
-atuin

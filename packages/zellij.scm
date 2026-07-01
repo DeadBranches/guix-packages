@@ -29,5 +29,3 @@
     (description "A terminal workspace with batteries included")
     (home-page "https://www.zellij.dev")
     (license license:expat)))
-
-zellij-bin

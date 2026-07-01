@@ -37,5 +37,3 @@
     (description "A new type of shell.")
     (home-page "https://www.nushell.sh")
     (license license:expat)))
-
-nushell-bin

@@ -30,5 +30,3 @@
     (description "Your de env, already prepped")
     (home-page "https://mise.en.ev")
     (license license:expat)))
-
-mise
