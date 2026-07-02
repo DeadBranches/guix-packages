@@ -7,7 +7,7 @@ def main [manifest: path = 'manifest.scm'] {
   let guix_user_repo = ($nu.home-dir | path join guix)
 
   print "Pulling channels..."
-  guix pull $"--channels=($guix_user_repo | path join my-channels.scm)"
+  guix pull $"--channels=($guix_user_repo | path join my-channels.conf)"
 
   print $"Applying manifest from ($manifest)..."
   guix package -m $manifest
