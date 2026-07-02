@@ -1,4 +1,4 @@
-(define-module (packages mise)
+(define-module (mise)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system copy)

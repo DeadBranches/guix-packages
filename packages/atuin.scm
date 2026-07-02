@@ -1,4 +1,4 @@
-(define-module (packages atuin)
+(define-module (atuin)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system copy)

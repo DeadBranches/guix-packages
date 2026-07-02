@@ -1,4 +1,4 @@
-(define-module (packages zellij)
+(define-module (zellij)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system copy)

@@ -1,4 +1,4 @@
-(define-module (packages nushell)
+(define-module (nushell)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system copy)
