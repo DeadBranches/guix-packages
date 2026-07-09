@@ -24,7 +24,8 @@
       #:strip-binaries? #f
       #:validate-runpath? #f
       #:phases (modify-phases %standard-phases
-                (delete 'patch-shebangs))))
+                (delete 'patch-shebangs)
+		(delete 'install-license-files))))
     (synopsis "Zellij")
     (description "A terminal workspace with batteries included")
     (home-page "https://www.zellij.dev")
