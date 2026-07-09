@@ -5,7 +5,9 @@
 ;; See the "Replicating Guix" section in the manual.
 
 (specifications->manifest
-  (list "fd"
+  (list "zellij"
+        "odt2txt"
+        "fd"
         "neovim"
         "rsync"
         "tree"
