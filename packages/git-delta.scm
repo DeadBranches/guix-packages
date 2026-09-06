@@ -1,13 +1,13 @@
-(define-module (delta)
+(define-module (git-delta)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system copy)
   #:use-module ((guix licenses) #:prefix license:)
-  #:export (delta-bin))
+  #:export (git-delta-bin))
 
-(define delta-bin
+(define git-delta-bin
   (package
-    (name "delta")
+    (name "git-delta")
     (version "0.19.2")
     (source
       (origin
@@ -20,7 +20,7 @@
     (build-system copy-build-system)
     (arguments
       '(#:install-plan
-        '(("delta" "bin/delta"))
+        '(("git-delta" "bin/git-delta"))
       #:strip-binaries? #f
       #:validate-runpath? #f
       #:phases (modify-phases %standard-phases
@@ -28,7 +28,7 @@
 		;(delete 'install-license-files)
 		)
       ))
-    (synopsis "delta")
+    (synopsis "git-delta")
     (description "A syntax-highlighting pager for git, diff, grep, rg --json, and blame output")
     (home-page "https://dandavison.github.io/delta/")
     (license license:expat)))

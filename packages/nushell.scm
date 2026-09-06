@@ -8,7 +8,7 @@
 (define nushell-bin
   (package
     (name "nushell")
-    (version "0.112.2")
+    (version "0.115.1")
     (source
       (origin
         (method url-fetch)
@@ -16,7 +16,7 @@
               "https://github.com/nushell/nushell/releases/download/"
               version "/nu-" version "-x86_64-unknown-linux-gnu.tar.gz"))
         (sha256
-          (base32 "15c368if9wsxfpqh10mya94d1sdpvaw1b9ia790z4616vmqw2f20"))))
+          (base32 "1c6qp4spdd3867xijyvdr04x1mlxb9rgldf52wv4ll7n859847fi"))))
     (build-system copy-build-system)
     (arguments
       '(#:install-plan

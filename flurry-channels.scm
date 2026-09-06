@@ -12,7 +12,7 @@
        (name 'kat-packages)
        (url "https://github.com/DeadBranches/guix-packages.git")
        (branch "main")
-       (commit "4d591da0e10eaf525b4b2f41a3596ff8d6be89d1"))
+       (commit "a1ac2453c475fc26bb01651abde273c42ded12cb"))
       (channel
        (name 'guix)
        (url "https://git.guix.gnu.org/guix.git")

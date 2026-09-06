@@ -7,7 +7,7 @@
 (specifications->manifest
  (list "cmake"
        "ninja"
-       "delta"
+       "git-delta"
        "zellij"
        "odt2txt"
        "fd"
@@ -23,7 +23,7 @@
        "tldr"
        "tcpdump"
        "screen"
-       "ffmpeg@8.0"
+       "ffmpeg"
        "pciutils"
        "mpd"
        "zoxide"
