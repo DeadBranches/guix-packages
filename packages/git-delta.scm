@@ -13,14 +13,14 @@
       (origin
         (method url-fetch)
         (uri (string-append
-              "https://github.com/dandavidson/delta/releases/download/"
-            "v" version "/delta-0.19.2-x86_64-unknown-linux-gnu.tar.gz"))
+              "https://github.com/dandavison/delta/releases/download/"
+            "v" version "/delta-" version "-x86_64-unknown-linux-gnu.tar.gz"))
         (sha256
           (base32 "1claq6hp7qzbra8n39fjzs5j3v92ljsf06xhqgb5733ab1gmqscf"))))
     (build-system copy-build-system)
     (arguments
       '(#:install-plan
-        '(("git-delta" "bin/git-delta"))
+        '(("delta" "bin/delta"))
       #:strip-binaries? #f
       #:validate-runpath? #f
       #:phases (modify-phases %standard-phases
