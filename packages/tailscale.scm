@@ -6,7 +6,7 @@
   #:use-module ((guix licenses) #:prefix license:)
   #:export (tailscale))
 
-(define %tailscale-version "1.98.4")
+(define %tailscale-version "1.102.3")
 
 ;; Tailscale ships one static tarball per CPU arch at
 ;;   https://pkgs.tailscale.com/stable/tailscale_<version>_<arch>.tgz
@@ -24,7 +24,7 @@
         (else (error "tailscale: unsupported system" system))))
 
 (define (tailscale-hash arch)
-  (cond ((string=? arch "amd64") "0sqbrvyiaam4rzv6n5rarpxq6f1bcw9csbmny6m6jgp6wy78mh76")
+  (cond ((string=? arch "amd64") "1xfy3is6989z33v6kadqn7xknr0kz8y34xngj0lzqzz53fsxkp9n")
         ((string=? arch "arm64") "0000000000000000000000000000000000000000000000000000")
         ((string=? arch "arm")   "0000000000000000000000000000000000000000000000000000")
         ((string=? arch "386")   "0000000000000000000000000000000000000000000000000000")
