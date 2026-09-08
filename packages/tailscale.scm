@@ -1,10 +1,9 @@
-(define-module (packages tailscale)
+(define-module (tailscale)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix utils)            ; %current-system / %current-target-system
   #:use-module (guix build-system copy)
-  #:use-module ((guix licenses) #:prefix license:)
-  #:export (tailscale))
+  #:use-module ((guix licenses) #:prefix license:))
 
 (define %tailscale-version "1.102.3")
 
@@ -62,4 +61,3 @@ service on Guix System, pointed at the binary in this profile.")
     (home-page "https://tailscale.com")
     (license license:bsd-3)))
 
-tailscale
