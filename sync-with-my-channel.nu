@@ -21,9 +21,13 @@ def main [] {
   # 4. Upgrade the device
   #      Run `guix pull -C
   print $"Updating remote repo."
-  git -C $guix_user_repo add $channels_file $package_manifest
-  git -C $guix_user_repo commit -m "update manifest"
-  git -C $guix_user_repo push
+  try {
+    git -C $guix_user_repo add $channels_file $package_manifest
+    git -C $guix_user_repo commit -m "update manifest"
+    git -C $guix_user_repo push
+  } catch  { 
+    print $"Nevermind. Nothing to update."
+  }
 
   print $"Installing new packages."
   guix pull $"--channels=($guix_user_repo | path join $channels_file)"

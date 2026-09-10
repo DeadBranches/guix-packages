@@ -16,7 +16,7 @@
               "https://github.com/atuinsh/atuin/releases/download/"
               "v" version "/atuin-x86_64-unknown-linux-gnu.tar.gz"))
         (sha256
-          (base32 "14avjapg3q3z9k9k2ldl43vfr00sfh0ywx919v3x535grq41jfcp"))))
+          (base32 "0jicvdv9qzimsv9r36drqh6r9kxzi11sckl6mrjxh0v6g6xdlhzx"))))
     (build-system copy-build-system)
     (arguments
       '(#:install-plan
