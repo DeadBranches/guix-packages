@@ -9,12 +9,12 @@
   (package
     (name "mise")
 
-    (version "v2026.4.19")
+    (version "2026.4.19")
     (source
       (origin
         (method url-fetch)
         (uri (string-append
-              "https://github.com/jdx/mise/releases/download/" version "/mise-" version "-linux-x64.tar.gz"))
+              "https://github.com/jdx/mise/releases/download/" version "/mise-v" version "-linux-x64.tar.gz"))
         (sha256
 	  (base32 "1js4zjx3cqqx0jnnf2qyvw8dk7jayq00masnkc57jpnxjiy07gqp"))))
 ;#	  (base32 "1js4zjx3cqqx0jnnf2qyvw8dk7jayq00masnkc57jpnxjiy07gqp"))))
